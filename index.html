@@ -382,8 +382,8 @@
                         </div>
                         <h3>Invictus Echo: Privacy-First AI Meeting Assistant</h3>
                         <p><strong>Problem:</strong> Wealth advisors needed their client meetings captured and summarised, without meeting audio leaving their laptop.</p>
-                        <p><strong>What I did:</strong> Build and release the Windows and macOS desktop apps: calendar-driven recording prompts, sign-in with the platform account, participant names from Zoom, Microsoft Teams and Google Meet, on-device speaker identification, and automatic app updates.</p>
-                        <p><strong>Outcome:</strong> An 83-minute meeting gets speaker labels in under two minutes on the device, and the summary goes to the matching client record. Meeting audio stays on the advisor's laptop.</p>
+                        <p><strong>What I did:</strong> Build and release the Windows and macOS desktop apps, a fork of the open-source Meetily: calendar-driven recording prompts, sign-in with the platform account, participant names from Zoom, Microsoft Teams and Google Meet, on-device speaker diarization, and automatic app updates.</p>
+                        <p><strong>Outcome:</strong> Transcription and speaker diarization run on the advisor's own laptop, and the summary goes to the matching client record. Meeting audio never leaves the device.</p>
                         <div class="tag-row">
                             <span class="tag">Rust</span>
                             <span class="tag">Tauri</span>
@@ -392,7 +392,7 @@
                         <details class="tech-toggle">
                             <summary>Technical details</summary>
                             <div class="tech-toggle-body">
-                                Rust and Tauri desktop app; on-device transcription with whisper.cpp; speaker identification with ONNX Runtime; Next.js front end; FastAPI backend.
+                                Rust and Tauri desktop app built on Meetily (MIT licence); on-device transcription with whisper.cpp; speaker diarization with ONNX Runtime; Next.js front end; FastAPI backend.
                             </div>
                         </details>
                     </div>
